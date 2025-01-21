@@ -6,5 +6,4 @@ secure = (('s','$'),('and','&'),('a','@'))
 def securePWD(password):
     pass
 
-
 print(securePWD(pwd))
