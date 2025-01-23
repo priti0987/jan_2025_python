@@ -16,6 +16,9 @@ class Employee:
     def increase(self):
         self.sal = self.sal * Employee.increment
 
+    @classmethod
+    def change_increment(cls,amt):
+        cls.increment=amt
 
 harry = Employee("harry_name", "das", 10000)
 
@@ -28,3 +31,7 @@ print(harry.sal)
 print(harry.__dict__)
 print(Employee.__dict__)
 print(Employee.number_of_emp)
+
+Employee.change_increment(2)
+harry.increase()
+print(harry.sal)
