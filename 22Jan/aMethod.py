@@ -25,3 +25,4 @@ class Employee:
 lvish=Employee.from_str("lovish-jacksn-30000")
 print(lvish.fname)
 print(lvish.sal)
+print(lvish.lname)
