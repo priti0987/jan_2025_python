@@ -1,3 +1,7 @@
+#dunder method
+#__add__, built in method , but we can modify them as we wann
+
+
 class Employee:
     number_of_emp = 0
     increment = 10
@@ -27,18 +31,11 @@ class Employee:
         else:
             return True
 
+    def __addsal__(self, other):
+        return self.sal + other.sal
 
-class Programmer(Employee):
-    def __init__(self, fname, lname, sal, prolang, exp):
-        super().__init__(fname, lname, sal)
-        self.prolang = prolang
-        self.exp = exp
-
-    def increase(self):
-        self.sal = self.sal * (self.increment + 0.2)
-
-
-harry = Programmer("pritii", "pore", 6600, "java", "2yrs")
-
-print(harry.fname)
-print(harry.exp)
+hrr=Employee("garry","pore",89)
+pt=Employee("peter","pos",11)
+a = 9
+print(a.__add__(1))
+print(hrr.__addsal__(pt))
