@@ -8,6 +8,7 @@ class Employee:
         self.sal = sal
         Employee.number_of_emp+=1
 
+
     def increase(self):
         self.sal = self.sal * Employee.increment
 
