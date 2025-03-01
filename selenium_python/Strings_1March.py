@@ -28,4 +28,7 @@ this is 3rd month of 2025 year'''
 # print("#".join(str1))
 # print("P".join(str1))
 
+list1 = str1.split()
+print(list1)
+
 
